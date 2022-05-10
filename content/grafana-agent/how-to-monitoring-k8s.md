@@ -507,6 +507,11 @@ kube-state-metrics基于client-go开发，轮询Kubernetes API，并将Kubernete
 
 主要镜像有：
 - image: quay.io/coreos/kube-state-metrics:v2.4.2
+- image: k8s.gcr.io/kube-state-metrics/kube-state-metrics
+
+由于 quay.io/coreos/kube-state-metrics [不再更新](https://kubernetes.io/blog/2021/04/13/kube-state-metrics-v-2-0/)，推荐使用  k8s.gcr.io/kube-state-metrics/kube-state-metrics
+
+> quay.io/coreos/kube-state-metrics images will no longer be updated. k8s.gcr.io/kube-state-metrics/kube-state-metrics is the new canonical location.
 
 对于pod的资源限制，一般情况下：
 ```
